@@ -1,0 +1,54 @@
+body {
+    /*background: linear-gradient(-45deg, #FE9A45, #E73265, #1C416D, #1AFAF3);*/
+    background-size: 50% 150%;
+    background-image: url(https://i.pinimg.com/736x/70/64/e1/7064e136467cb6258ed5ce65910fb728.jpg);
+    
+    animation: gradient 25s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.movie-card{
+    max-width: 540px;
+    opacity: 0.98;
+    
+}
+.thumbnail{
+
+    position: absolute;
+    height: 50%;
+
+    border: none;
+}
+.buy-or-read{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    padding: 10px;
+    box-shadow: 0 0 10px #000;
+}
